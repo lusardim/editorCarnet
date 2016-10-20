@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 5.6.2.final using JasperReports Library version 5.6.1  -->
+<!-- 2014-11-06T08:39:51 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carnet_A4" pageWidth="595" pageHeight="842" columnWidth="486" leftMargin="55" rightMargin="54" topMargin="36" bottomMargin="36" uuid="2c9bd481-21a7-4cbe-8e1f-3b5c935ec754">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sample DB"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="cm"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="fileName" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="143" splitType="Stretch">
+			<image scaleImage="RetainShape" hAlign="Center" onErrorType="Icon">
+				<reportElement key="" stretchType="RelativeToTallestObject" x="-1" y="0" width="485" height="143" uuid="77ba4705-0944-4225-a07e-4d0cc7ab7c65">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[net.sf.jasperreports.renderers.BatikRenderer.getInstance(new java.io.File($F{fileName}))]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>
